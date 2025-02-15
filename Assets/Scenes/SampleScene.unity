@@ -553,6 +553,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &245443785
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 245443786}
+  m_Layer: 0
+  m_Name: PinAnchor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &245443786
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245443785}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -1.38, y: 1, z: 42.37}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &301968030
 GameObject:
   m_ObjectHideFlags: 0
@@ -956,7 +987,7 @@ GameObject:
   - component: {fileID: 613410667}
   - component: {fileID: 613410669}
   m_Layer: 0
-  m_Name: Environment
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -978,6 +1009,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   OnMove:
+    m_PersistentCalls:
+      m_Calls: []
+  OnResetPressed:
     m_PersistentCalls:
       m_Calls: []
 --- !u!4 &613410668
@@ -1008,6 +1042,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+  ball: {fileID: 1203150725}
+  pinCollection: {fileID: 644298267424628340, guid: 9c98f5e4fc01b474cba63f026d76f90a, type: 3}
+  pinAnchor: {fileID: 245443786}
+  inputManager: {fileID: 613410667}
   scoreText: {fileID: 53174794}
 --- !u!1 &659433468
 GameObject:
@@ -1903,7 +1941,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7659142944758154907, guid: 9c98f5e4fc01b474cba63f026d76f90a, type: 3}
+    - {fileID: 6514930422195951795, guid: 9c98f5e4fc01b474cba63f026d76f90a, type: 3}
+    - {fileID: 1695136927297082708, guid: 9c98f5e4fc01b474cba63f026d76f90a, type: 3}
+    - {fileID: 7910444231398025146, guid: 9c98f5e4fc01b474cba63f026d76f90a, type: 3}
+    - {fileID: 9145508348081290227, guid: 9c98f5e4fc01b474cba63f026d76f90a, type: 3}
+    - {fileID: 5725183294765313040, guid: 9c98f5e4fc01b474cba63f026d76f90a, type: 3}
+    - {fileID: 951602650593602891, guid: 9c98f5e4fc01b474cba63f026d76f90a, type: 3}
+    - {fileID: 6076073428011217421, guid: 9c98f5e4fc01b474cba63f026d76f90a, type: 3}
+    - {fileID: 3279478706372714912, guid: 9c98f5e4fc01b474cba63f026d76f90a, type: 3}
+    - {fileID: 7658245618924524195, guid: 9c98f5e4fc01b474cba63f026d76f90a, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c98f5e4fc01b474cba63f026d76f90a, type: 3}
@@ -1983,3 +2031,4 @@ SceneRoots:
   - {fileID: 2078593707}
   - {fileID: 28340870}
   - {fileID: 1537564590}
+  - {fileID: 245443786}
