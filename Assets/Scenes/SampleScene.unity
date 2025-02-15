@@ -204,11 +204,12 @@ Transform:
   m_GameObject: {fileID: 301968030}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.35325634, y: 1.615, z: 19.255348}
+  m_LocalPosition: {x: 0.35325634, y: 1.615, z: -6.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1715950329}
+  - {fileID: 659433469}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &301968032
@@ -362,8 +363,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.27568248, y: 3.194836e-15, z: -9.162667e-16, w: 0.96124876}
-  m_LocalPosition: {x: 0.35325634, y: 6.615, z: 11.255348}
+  m_LocalRotation: {x: 0.15190038, y: 0.000000033455024, z: -0.000000005141493, w: 0.9883958}
+  m_LocalPosition: {x: 0.35325634, y: 3.2321486, z: -11.937021}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -615,6 +616,37 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &659433468
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 659433469}
+  m_Layer: 0
+  m_Name: BallAnchor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &659433469
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659433468}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 301968031}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &686414612
 GameObject:
@@ -925,6 +957,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 30
   inputManager: {fileID: 613410667}
+  ballAnchor: {fileID: 659433469}
 --- !u!1 &1648553995
 GameObject:
   m_ObjectHideFlags: 0
@@ -1085,8 +1118,8 @@ MonoBehaviour:
       Time: 2
     Restrictions: 0
   VerticalAxis:
-    Value: 17.5
-    Center: 17.5
+    Value: 0
+    Center: 0
     Range: {x: -10, y: 45}
     Wrap: 0
     Recentering:
@@ -1155,8 +1188,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1648553995}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.27568245, y: 3.358898e-15, z: -1.4883184e-15, w: 0.96124876}
-  m_LocalPosition: {x: 0.35325634, y: 6.615, z: 11.255348}
+  m_LocalRotation: {x: 0.15190038, y: 0.000000033455024, z: -0.000000005141494, w: 0.9883958}
+  m_LocalPosition: {x: 0.35325634, y: 3.2321486, z: -11.937021}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
